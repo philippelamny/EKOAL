@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EKO AL — Menuiseries aluminium & PVC en Lorraine | Fenêtres, portes, pergolas</title>
+<meta name="description" content="EKO AL, menuiserie de proximité en Lorraine. Fenêtres et baies aluminium Alumil, PVC Kömmerling, portes d'entrée haut de gamme, pergolas bioclimatiques. Étude et suivi personnalisé de votre projet du début à la fin.">
+<link rel="icon" href="assets/img/logo-160.jpeg">
+<style>
+:root{
+  --navy-950:#070d14;
+  --navy-900:#0b1420;
+  --navy-800:#122334;
+  --navy-700:#1a3348;
+  --blue-500:#2f8fd6;
+  --blue-400:#4fa8e6;
+  --blue-100:#e8f3fc;
+  --gray-50:#f6f8fa;
+  --gray-100:#eef1f4;
+  --gray-300:#d7dde3;
+  --gray-500:#8894a1;
+  --gray-700:#4b5763;
+  --ink:#131c24;
+  --white:#ffffff;
+  --radius:14px;
+  --shadow-sm:0 2px 10px rgba(11,20,32,.06);
+  --shadow-md:0 12px 32px rgba(11,20,32,.12);
+  --container:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--white);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{max-width:var(--container);margin:0 auto;padding:0 24px}
+section{padding:88px 0}
+h1,h2,h3,h4{margin:0 0 .5em;line-height:1.15;letter-spacing:-.01em}
+h2.section-title{font-size:clamp(1.6rem,3vw,2.3rem);color:var(--navy-900)}
+p.section-lead{color:var(--gray-700);font-size:1.05rem;max-width:640px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--blue-500);margin-bottom:14px;
+}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--blue-500);display:inline-block}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:14px 26px;border-radius:999px;font-weight:600;font-size:.95rem;
+  cursor:pointer;border:1px solid transparent;transition:transform .15s ease,box-shadow .15s ease,background .15s ease;
+  white-space:nowrap;
+}
+.btn:active{transform:scale(.98)}
+.btn-primary{background:var(--blue-500);color:var(--white);box-shadow:0 8px 20px rgba(47,143,214,.35)}
+.btn-primary:hover{background:var(--blue-400)}
+.btn-ghost{background:rgba(255,255,255,.08);color:var(--white);border-color:rgba(255,255,255,.35)}
+.btn-ghost:hover{background:rgba(255,255,255,.18)}
+.btn-dark{background:var(--navy-900);color:var(--white)}
+.btn-dark:hover{background:var(--navy-800)}
+
+/* ---------- Header ---------- */
+header.site{
+  position:sticky;top:0;z-index:100;
+  background:rgba(7,13,20,.92);
+  backdrop-filter:saturate(160%) blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;max-width:var(--container);margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:42px;height:42px;border-radius:9px;object-fit:cover}
+.brand .word{color:var(--white);font-weight:800;font-size:1.15rem;letter-spacing:.02em}
+.brand .word span{color:var(--blue-400)}
+nav.links{display:flex;align-items:center;gap:30px}
+nav.links a{color:var(--gray-300);font-size:.93rem;font-weight:500;transition:color .15s}
+nav.links a:hover{color:var(--white)}
+.nav-cta{display:flex;align-items:center;gap:14px}
+.nav-phone{color:var(--white);font-weight:700;font-size:.92rem;display:flex;align-items:center;gap:8px}
+.nav-phone svg{flex:none}
+.burger{display:none;background:none;border:none;color:var(--white);font-size:1.5rem;cursor:pointer;padding:4px}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;color:var(--white);
+  background:linear-gradient(100deg,rgba(6,11,18,.94) 32%,rgba(7,14,22,.62) 62%,rgba(7,14,22,.3) 100%),url('assets/img/hero-terrace.jpeg') right center/cover no-repeat;
+  padding:110px 0 70px;
+}
+.hero .container{position:relative;z-index:2}
+.hero h1{font-size:clamp(2.1rem,4.4vw,3.4rem);max-width:660px}
+.hero h1 em{color:var(--blue-400);font-style:normal}
+.hero p.lead{font-size:1.12rem;color:rgba(255,255,255,.82);max-width:540px;margin-bottom:34px}
+.hero .cta-row{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:56px}
+.trust-row{
+  display:flex;gap:0;flex-wrap:wrap;
+  border-top:1px solid rgba(255,255,255,.15);
+  padding-top:26px;
+}
+.trust-item{
+  flex:1 1 200px;display:flex;align-items:center;gap:12px;padding:6px 22px 6px 0;
+  color:rgba(255,255,255,.85);font-size:.88rem;
+}
+.trust-item svg{flex:none;color:var(--blue-400)}
+.trust-item b{display:block;color:var(--white);font-size:.95rem}
+
+/* ---------- Produits ---------- */
+.products-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:48px;
+}
+.product-card{
+  background:var(--white);border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow-sm);border:1px solid var(--gray-100);
+  display:flex;flex-direction:column;transition:box-shadow .2s ease,transform .2s ease;
+}
+.product-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px)}
+.product-card .thumb{height:220px;overflow:hidden;position:relative}
+.product-card .thumb img{width:100%;height:100%;object-fit:cover}
+.product-card .tag{
+  position:absolute;top:14px;left:14px;background:rgba(7,13,20,.75);color:var(--white);
+  font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+  padding:6px 12px;border-radius:999px;
+}
+.product-card .body{padding:24px 26px 26px}
+.product-card h3{font-size:1.25rem;color:var(--navy-900)}
+.product-card p{color:var(--gray-700);font-size:.94rem;margin:0 0 14px}
+.product-card ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.product-card ul li{font-size:.88rem;color:var(--gray-700);display:flex;gap:8px;align-items:flex-start}
+.product-card ul li svg{flex:none;margin-top:3px;color:var(--blue-500)}
+
+/* ---------- Fiches techniques strip ---------- */
+.specs-strip{background:var(--navy-950);color:var(--white);padding:70px 0}
+.specs-strip .head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;margin-bottom:34px}
+.specs-strip h2{color:var(--white)}
+.specs-strip p.section-lead{color:rgba(255,255,255,.65)}
+.specs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.spec-card{background:var(--navy-900);border:1px solid rgba(255,255,255,.08);border-radius:12px;overflow:hidden;cursor:pointer}
+.spec-card img{height:120px;object-fit:cover;width:100%}
+.spec-card .cap{padding:12px 14px;font-size:.82rem;font-weight:600;color:rgba(255,255,255,.85)}
+.spec-card .cap small{display:block;font-weight:400;color:rgba(255,255,255,.5);margin-top:2px}
+.partners-line{margin-top:40px;display:flex;flex-wrap:wrap;gap:14px 40px;align-items:center;justify-content:center;padding-top:30px;border-top:1px solid rgba(255,255,255,.1)}
+.partners-line span{font-weight:800;letter-spacing:.03em;color:rgba(255,255,255,.55);font-size:1.05rem}
+.partners-line span b{color:rgba(255,255,255,.9)}
+
+/* ---------- Pourquoi nous ---------- */
+.why{background:var(--gray-50)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:48px}
+.why-card{background:var(--white);border-radius:var(--radius);padding:28px 24px;border:1px solid var(--gray-100);box-shadow:var(--shadow-sm)}
+.why-card .icon{
+  width:48px;height:48px;border-radius:12px;background:var(--blue-100);color:var(--blue-500);
+  display:flex;align-items:center;justify-content:center;margin-bottom:16px;
+}
+.why-card h3{font-size:1.05rem;color:var(--navy-900)}
+.why-card p{font-size:.9rem;color:var(--gray-700);margin:0}
+
+/* ---------- Zone ---------- */
+.zone{background:var(--navy-900);color:var(--white)}
+.zone .container{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.zone h2{color:var(--white)}
+.zone p.section-lead{color:rgba(255,255,255,.68)}
+.zone-list{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:14px}
+.zone-list li{display:flex;gap:12px;align-items:flex-start;font-size:.95rem;color:rgba(255,255,255,.85)}
+.zone-list li svg{flex:none;color:var(--blue-400);margin-top:3px}
+.zone-card{
+  background:linear-gradient(160deg,var(--navy-800),var(--navy-700));
+  border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:34px;
+}
+.zone-map{
+  width:100%;aspect-ratio:4/3;border-radius:12px;
+  background:radial-gradient(circle at 30% 30%, rgba(79,168,230,.35), transparent 60%),
+             repeating-linear-gradient(45deg, rgba(255,255,255,.03) 0 2px, transparent 2px 14px);
+  border:1px solid rgba(255,255,255,.12);
+  display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;
+  margin-bottom:22px;position:relative;overflow:hidden;
+}
+.zone-map .pin{color:var(--blue-400)}
+.zone-map .label{font-weight:700;font-size:1.05rem}
+.zone-map .sub{font-size:.82rem;color:rgba(255,255,255,.6)}
+.zone-card address{font-style:normal;color:rgba(255,255,255,.85);font-size:.95rem;line-height:1.7}
+.zone-card a.maps{display:inline-flex;gap:8px;align-items:center;margin-top:16px;color:var(--blue-400);font-weight:600;font-size:.9rem}
+
+/* ---------- Showroom ---------- */
+.showroom{padding:70px 0}
+.showroom .container{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.showroom-visual{
+  background:var(--gray-50);border:1px dashed var(--gray-300);border-radius:18px;
+  min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:var(--gray-500);text-align:center;padding:30px;
+}
+.showroom-visual svg{color:var(--blue-500)}
+.showroom-visual b{color:var(--navy-900);font-size:1.05rem}
+
+/* ---------- Contact ---------- */
+.contact{background:var(--gray-50)}
+.contact .grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;margin-top:44px}
+.contact-info{background:var(--navy-900);color:var(--white);border-radius:18px;padding:38px 34px;height:fit-content}
+.contact-info h3{color:var(--white);font-size:1.2rem}
+.contact-info p{color:rgba(255,255,255,.65);font-size:.92rem}
+.contact-info ul{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:20px}
+.contact-info li{display:flex;gap:14px;align-items:flex-start}
+.contact-info li svg{flex:none;color:var(--blue-400);margin-top:2px}
+.contact-info li a, .contact-info li span{font-size:.95rem;color:rgba(255,255,255,.92);font-weight:600}
+.contact-info li small{display:block;color:rgba(255,255,255,.5);font-weight:400;margin-top:2px}
+.contact-form{background:var(--white);border-radius:18px;padding:38px;border:1px solid var(--gray-100);box-shadow:var(--shadow-sm)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+.field label{font-size:.83rem;font-weight:600;color:var(--navy-900)}
+.field input,.field select,.field textarea{
+  padding:12px 14px;border-radius:10px;border:1px solid var(--gray-300);font-size:.94rem;
+  font-family:inherit;background:var(--gray-50);color:var(--ink);
+}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--blue-400);outline-offset:1px;background:var(--white)}
+.field textarea{resize:vertical;min-height:120px}
+.form-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:8px;flex-wrap:wrap}
+.form-note{font-size:.8rem;color:var(--gray-500);max-width:340px}
+#formStatus{font-size:.85rem;margin-top:12px}
+
+/* ---------- Footer ---------- */
+footer.site{background:var(--navy-950);color:rgba(255,255,255,.7);padding:56px 0 26px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.08)}
+.footer-brand .brand{margin-bottom:14px}
+.footer-brand p{font-size:.88rem;max-width:300px;color:rgba(255,255,255,.55)}
+.footer-col h4{color:var(--white);font-size:.92rem;margin-bottom:16px}
+.footer-col ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.footer-col a{font-size:.88rem;color:rgba(255,255,255,.6)}
+.footer-col a:hover{color:var(--white)}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:22px;font-size:.8rem;color:rgba(255,255,255,.4)}
+
+/* ---------- Lightbox ---------- */
+.lightbox{
+  position:fixed;inset:0;background:rgba(4,8,13,.92);display:none;align-items:center;justify-content:center;
+  z-index:1000;padding:30px;
+}
+.lightbox.open{display:flex}
+.lightbox img{max-width:min(900px,92vw);max-height:88vh;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.lightbox .close{position:absolute;top:22px;right:28px;color:#fff;font-size:2rem;cursor:pointer;line-height:1}
+
+/* ---------- Responsive ---------- */
+@media (max-width:960px){
+  .products-grid{grid-template-columns:1fr}
+  .specs-grid{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .zone .container{grid-template-columns:1fr}
+  .showroom .container{grid-template-columns:1fr}
+  .contact .grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  nav.links{display:none}
+  .burger{display:block}
+  .nav-phone span.txt{display:none}
+  section{padding:60px 0}
+  .form-row{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .trust-row{gap:10px}
+  .hero{background-position:70% center}
+}
+@media (max-width:520px){
+  .specs-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="nav-wrap">
+    <a href="#top" class="brand">
+      <img src="assets/img/logo-160.jpeg" alt="Logo EKO AL">
+      <span class="word">EKO <span>AL</span></span>
+    </a>
+    <nav class="links" id="navLinks">
+      <a href="#produits">Produits</a>
+      <a href="#pourquoi">Pourquoi nous</a>
+      <a href="#zone">Zone d'intervention</a>
+      <a href="#showroom">Showroom</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+33601467619" class="nav-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="txt">06 01 46 76 19</span>
+      </a>
+      <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:.85rem">Étude gratuite</a>
+      <button class="burger" id="burgerBtn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<div id="top"></div>
+
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow" style="color:var(--blue-400)">Menuiserie de proximité — Lorraine</div>
+    <h1>Vos fenêtres, portes et pergolas, <em>suivies de près</em> du premier plan au dernier réglage.</h1>
+    <p class="lead">EKO AL conçoit, fabrique sur mesure et pose vos menuiseries aluminium et PVC à Saint-Nicolas-de-Port et dans les communes limitrophes. Un seul interlocuteur, de l'étude à la réception du chantier.</p>
+    <div class="cta-row">
+      <a href="#contact" class="btn btn-primary">Demander une étude gratuite</a>
+      <a href="#produits" class="btn btn-ghost">Découvrir nos produits</a>
+    </div>
+    <div class="trust-row">
+      <div class="trust-item">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 3 7v6c0 5 4 8.5 9 9 5-.5 9-4 9-9V7z"/></svg>
+        <div><b>Garantie jusqu'à 20 ans</b>Menuiseries aluminium</div>
+      </div>
+      <div class="trust-item">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
+        <div><b>Alumil & Kömmerling</b>Partenaires premium certifiés</div>
+      </div>
+      <div class="trust-item">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21c-4.5-2.5-8-6-8-11a8 8 0 0 1 16 0c0 5-3.5 8.5-8 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <div><b>Lorraine & alentours</b>Étude et pose de proximité</div>
+      </div>
+      <div class="trust-item">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+        <div><b>Suivi personnalisé</b>Un interlocuteur, du devis à la pose</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="produits">
+  <div class="container">
+    <div class="eyebrow">Nos gammes</div>
+    <h2 class="section-title">Des menuiseries pensées pour durer</h2>
+    <p class="section-lead">Aluminium, PVC, portes d'entrée ou pergolas bioclimatiques : chaque produit est sélectionné pour son design, ses performances et sa provenance, puis posé sur mesure par nos équipes.</p>
+
+    <div class="products-grid">
+
+      <article class="product-card">
+        <div class="thumb">
+          <span class="tag">Aluminium</span>
+          <img src="assets/img/alu_generic.jpeg" alt="Baies vitrées aluminium EKO AL, terrasse le soir">
+        </div>
+        <div class="body">
+          <h3>Menuiseries aluminium</h3>
+          <p>Fenêtres, baies vitrées, portes d'entrée, volets roulants et vérandas en profilés Alumil — partenaire premium. Lignes fines, grandes surfaces vitrées, finitions sur mesure.</p>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Isolation thermique et phonique renforcée</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Plus de 300 coloris et finitions RAL</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Fabrication française, garantie jusqu'à 20 ans</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="thumb">
+          <span class="tag">PVC</span>
+          <img src="assets/img/kommerling76.jpeg" alt="Menuiserie PVC Kömmerling, maison contemporaine">
+        </div>
+        <div class="body">
+          <h3>Menuiseries PVC Kömmerling</h3>
+          <p>Trois gammes de profilés PVC pour s'adapter à chaque projet : le 70AD fiable et économique, le 76AD à joint central pour l'isolation renforcée, et le 88MD pensé pour les maisons passives.</p>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Jusqu'à 6 chambres d'isolation, Uw dès 0,79 W/(m²·K)</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Profilés sans plomb, recyclables (Greenline)</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Sécurité anti-effraction jusqu'à RC2 (WK2)</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="thumb">
+          <span class="tag">Portes d'entrée</span>
+          <img src="assets/img/portes.jpeg" alt="Porte d'entrée haut de gamme EKO AL">
+        </div>
+        <div class="body">
+          <h3>Portes d'entrée haut de gamme</h3>
+          <p>Contemporaine, intemporelle, minimaliste, esprit atelier ou audacieuse : cinq univers de style, fabriqués sur mesure en France avec des serrures multipoints certifiées.</p>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Sécurité renforcée et isolation thermique/phonique</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Large choix de modèles et personnalisations</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Garantie jusqu'à 10 ans, pose par nos experts</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="thumb">
+          <span class="tag">Extérieur</span>
+          <img src="assets/img/hero-pergola.jpeg" alt="Pergola bioclimatique EKO AL au coucher du soleil">
+        </div>
+        <div class="body">
+          <h3>Pergolas bioclimatiques</h3>
+          <p>Lames orientables jusqu'à 135°, gestion de la lumière, de la pluie et de la ventilation, motorisation pilotable à distance. Un nouvel espace de vie extérieur, toute l'année.</p>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Aluminium haut de gamme thermolaqué</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Éclairage LED, stores ZIP, chauffage en option</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Installation sur mesure, garantie jusqu'à 10 ans</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="specs-strip">
+  <div class="container">
+    <div class="head">
+      <div>
+        <div class="eyebrow">Qualité & provenance</div>
+        <h2 class="section-title">Des fiches techniques à l'appui, pas que des promesses</h2>
+        <p class="section-lead">Chaque gamme proposée par EKO AL s'appuie sur des fabricants reconnus. Cliquez sur une fiche pour l'agrandir.</p>
+      </div>
+    </div>
+    <div class="specs-grid">
+      <div class="spec-card" data-full="assets/img/alumil.jpeg">
+        <img src="assets/img/alumil.jpeg" alt="Fiche technique Alumil S67 / S560">
+        <div class="cap">Alumil S67 / S560<small>Fenêtres & baies coulissantes alu</small></div>
+      </div>
+      <div class="spec-card" data-full="assets/img/kommerling88.jpeg">
+        <img src="assets/img/kommerling88.jpeg" alt="Fiche technique Kömmerling 88MD">
+        <div class="cap">Kömmerling 88 MD<small>PVC haute performance, maison passive</small></div>
+      </div>
+      <div class="spec-card" data-full="assets/img/ferrures.jpeg">
+        <img src="assets/img/ferrures.jpeg" alt="Fiche technique ferrures Winkhaus et GÜ">
+        <div class="cap">Ferrures Winkhaus & GÜ<small>Sécurité anti-effraction RC2</small></div>
+      </div>
+      <div class="spec-card" data-full="assets/img/profiles_pvc.jpeg">
+        <img src="assets/img/profiles_pvc.jpeg" alt="Comparatif profilés PVC 70AD 76MD 88MD">
+        <div class="cap">Nos 3 profilés PVC<small>70AD · 76MD · 88MD</small></div>
+      </div>
+    </div>
+    <div class="partners-line">
+      <span><b>Alumil</b></span>
+      <span><b>Kömmerling</b></span>
+      <span><b>Winkhaus</b> ActivPilot</span>
+      <span><b>GÜ</b> Gretsch-Unitas</span>
+    </div>
+  </div>
+</section>
+
+<section id="pourquoi" class="why">
+  <div class="container">
+    <div class="eyebrow">Pourquoi EKO AL</div>
+    <h2 class="section-title">La proximité, du premier échange à la dernière visite</h2>
+    <p class="section-lead">Nous sommes une entreprise à taille humaine, installée à Saint-Nicolas-de-Port. Notre différence : vous connaître, comprendre votre projet, et rester votre seul interlocuteur jusqu'à la fin du chantier.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21c-4.5-2.5-8-6-8-11a8 8 0 0 1 16 0c0 5-3.5 8.5-8 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <h3>Proximité locale</h3>
+        <p>Basés à Saint-Nicolas-de-Port, nous intervenons en Lorraine et dans les communes limitrophes pour un suivi de chantier réactif.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg></div>
+        <h3>Suivi personnalisé</h3>
+        <p>De l'étude sur mesure à la réception des travaux, un même contact vous accompagne à chaque étape du projet.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Matériaux tracés</h3>
+        <p>Alumil, Kömmerling, Winkhaus, GÜ : des marques reconnues, des fiches techniques consultables, aucune zone d'ombre sur la provenance.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 3 7v6c0 5 4 8.5 9 9 5-.5 9-4 9-9V7z"/></svg></div>
+        <h3>Qualité garantie</h3>
+        <p>Fabrication sur mesure, pose par nos experts et garanties allant jusqu'à 20 ans selon les gammes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="zone" class="zone">
+  <div class="container">
+    <div>
+      <div class="eyebrow" style="color:var(--blue-400)">Zone d'intervention</div>
+      <h2 class="section-title">Basés à Saint-Nicolas-de-Port, à votre service en Lorraine</h2>
+      <p class="section-lead">EKO AL intervient pour l'étude, la fabrication sur mesure et la pose de vos menuiseries sur Saint-Nicolas-de-Port et l'ensemble des communes limitrophes.</p>
+      <ul class="zone-list">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Étude de projet gratuite à domicile</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Pose par nos équipes, suivi de chantier de proximité</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Zone d'intervention : Lorraine et communes limitrophes</li>
+      </ul>
+    </div>
+    <div class="zone-card">
+      <div class="zone-map">
+        <svg class="pin" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21c-4.5-2.5-8-6-8-11a8 8 0 0 1 16 0c0 5-3.5 8.5-8 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <div class="label">Saint-Nicolas-de-Port (54210)</div>
+        <div class="sub">et communes limitrophes de Lorraine</div>
+      </div>
+      <address>
+        EKO AL<br>
+        29 Route de Ville-en-Vermois<br>
+        54210 Saint-Nicolas-de-Port
+      </address>
+      <a class="maps" href="https://www.google.com/maps/search/?api=1&query=29+Route+de+Ville-en-Vermois+54210+Saint-Nicolas-de-Port" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4.5-2.5-8-6-8-11a8 8 0 0 1 16 0c0 5-3.5 8.5-8 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Voir l'itinéraire
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="showroom" class="showroom">
+  <div class="container">
+    <div>
+      <div class="eyebrow">À venir</div>
+      <h2 class="section-title">Un showroom pour voir, toucher et comparer</h2>
+      <p class="section-lead" style="margin-bottom:22px">
+        Notre atelier de Saint-Nicolas-de-Port accueillera prochainement un showroom : échantillons de profilés aluminium et PVC, coloris, ferrures et modèles de portes d'entrée exposés sur place, pour vous permettre de choisir en toute confiance avant de valider votre projet.
+      </p>
+      <a href="#contact" class="btn btn-dark">Être informé de l'ouverture</a>
+    </div>
+    <div class="showroom-visual">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="1.5"/><path d="M8 7V4h8v3M3 12h18"/></svg>
+      <b>Showroom en préparation</b>
+      <span>Profilés, coloris et ferrures exposés sur place — ouverture annoncée prochainement.</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="eyebrow">Contact</div>
+    <h2 class="section-title">Parlez-nous de votre projet</h2>
+    <p class="section-lead">Laissez-nous vos coordonnées et quelques mots sur votre projet : nous vous recontactons pour organiser une étude, gratuite et sans engagement.</p>
+
+    <div class="grid">
+      <div class="contact-info">
+        <h3>Nos coordonnées</h3>
+        <p>Une question, un devis, une urgence sur chantier : contactez-nous directement.</p>
+        <ul>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div><a href="tel:+33601467619">06 01 46 76 19</a><small>Du lundi au samedi</small></div>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg>
+            <div><a href="mailto:contact@ekoal.fr">contact@ekoal.fr</a><small>Réponse sous 24-48h</small></div>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4.5-2.5-8-6-8-11a8 8 0 0 1 16 0c0 5-3.5 8.5-8 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <div><span>29 Route de Ville-en-Vermois</span><small>54210 Saint-Nicolas-de-Port</small></div>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="field">
+            <label for="f-name">Nom et prénom</label>
+            <input type="text" id="f-name" name="name" required placeholder="Jean Dupont">
+          </div>
+          <div class="field">
+            <label for="f-phone">Téléphone</label>
+            <input type="tel" id="f-phone" name="phone" required placeholder="06 12 34 56 78">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" name="email" required placeholder="vous@exemple.fr">
+          </div>
+          <div class="field">
+            <label for="f-city">Commune du projet</label>
+            <input type="text" id="f-city" name="city" placeholder="Ex. Saint-Nicolas-de-Port">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field full">
+            <label for="f-type">Type de projet</label>
+            <select id="f-type" name="type">
+              <option>Fenêtres aluminium</option>
+              <option>Fenêtres PVC</option>
+              <option>Baie vitrée / coulissant</option>
+              <option>Porte d'entrée</option>
+              <option>Volets roulants</option>
+              <option>Véranda</option>
+              <option>Pergola bioclimatique</option>
+              <option>Autre / je ne sais pas encore</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field full">
+            <label for="f-message">Décrivez votre projet</label>
+            <textarea id="f-message" name="message" required placeholder="Nombre de fenêtres, superficie, style souhaité, délai envisagé..."></textarea>
+          </div>
+        </div>
+        <div class="form-foot">
+          <span class="form-note">En envoyant ce formulaire, votre messagerie s'ouvrira avec un message pré-rempli à destination de contact@ekoal.fr.</span>
+          <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
+        </div>
+        <div id="formStatus"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <img src="assets/img/logo-160.jpeg" alt="Logo EKO AL" style="width:38px;height:38px">
+          <span class="word">EKO <span>AL</span></span>
+        </a>
+        <p>L'exigence de la qualité, le plaisir de l'esthétique. Menuiserie aluminium et PVC de proximité en Lorraine.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#produits">Nos produits</a></li>
+          <li><a href="#pourquoi">Pourquoi EKO AL</a></li>
+          <li><a href="#zone">Zone d'intervention</a></li>
+          <li><a href="#showroom">Showroom</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+33601467619">06 01 46 76 19</a></li>
+          <li><a href="mailto:contact@ekoal.fr">contact@ekoal.fr</a></li>
+          <li><span>29 Route de Ville-en-Vermois</span></li>
+          <li><span>54210 Saint-Nicolas-de-Port</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 EKO AL — Tous droits réservés</span>
+      <span>Menuiseries aluminium & PVC — Lorraine</span>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <span class="close" id="lightboxClose">&times;</span>
+  <img id="lightboxImg" src="" alt="Fiche technique agrandie">
+</div>
+
+<script>
+// Mobile nav toggle
+const burger = document.getElementById('burgerBtn');
+const navLinks = document.getElementById('navLinks');
+burger.addEventListener('click', () => {
+  const isOpen = navLinks.style.display === 'flex';
+  navLinks.style.display = isOpen ? 'none' : 'flex';
+  navLinks.style.cssText += isOpen ? '' : 'position:absolute;top:64px;left:0;right:0;background:#0b1420;flex-direction:column;padding:20px 24px;gap:16px;border-bottom:1px solid rgba(255,255,255,.08)';
+});
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  if (window.innerWidth <= 720) navLinks.style.display = 'none';
+}));
+
+// Lightbox for spec sheets
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+document.querySelectorAll('.spec-card').forEach(card => {
+  card.addEventListener('click', () => {
+    lightboxImg.src = card.getAttribute('data-full');
+    lightbox.classList.add('open');
+  });
+});
+document.getElementById('lightboxClose').addEventListener('click', () => lightbox.classList.remove('open'));
+lightbox.addEventListener('click', (e) => { if (e.target === lightbox) lightbox.classList.remove('open'); });
+
+// Contact form -> mailto
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const f = e.target;
+  const name = f.name.value.trim();
+  const phone = f.phone.value.trim();
+  const email = f.email.value.trim();
+  const city = f.city.value.trim();
+  const type = f.type.value;
+  const message = f.message.value.trim();
+
+  const subject = `Demande d'étude - ${type} - ${name}`;
+  const body =
+`Nom: ${name}
+Téléphone: ${phone}
+Email: ${email}
+Commune du projet: ${city || 'Non précisée'}
+Type de projet: ${type}
+
+Description du projet:
+${message}`;
+
+  const mailto = `mailto:contact@ekoal.fr?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = mailto;
+
+  const status = document.getElementById('formStatus');
+  status.textContent = "Votre messagerie va s'ouvrir avec votre demande pré-remplie. Merci !";
+  status.style.color = '#2f8fd6';
+});
+</script>
+
+</body>
+</html>
